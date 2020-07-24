@@ -4,12 +4,14 @@ Encodes tabular data from a DataFrame into images you can feed to a deep learnin
 
 ```
 o.data         # your dataframe 
-o.fit(df)      # if you have seperate train\val\test sets (automatic if you just set .data)
+o.fit(df)      # if you have seperate train\val\test sets 
+               #(automatic if you just set .data)
 o.exclude_cols # cols you don't want in your images
 o.iterrows()   # iterrows() generator like pandas
 
-cls.create_image(vals) # create an image directly from an array of 0-255 values 
 cls.fastai_img(img)    # convert to a fastai image you can call predict() on 
+cls.create_image(vals) # create an image directly from an array of 
+                       # values from 0-255 
 ```
 
 Example:
