@@ -21,9 +21,10 @@ Example:
 enc = DFToImageEncoder()
 enc.exclude_cols = ["PassengerId", "Survived"]
 enc.fit(df_all) # fit to ALL the data
-enc.data = df_train
 
 # create training images saved to disc
+enc.data = df_train
+
 for index, row, img in enc.iterrows():
   # exclude_cols are still returned on row for you to inspect
   if row.Survived == True:
