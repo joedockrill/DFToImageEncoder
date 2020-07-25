@@ -29,7 +29,6 @@ for index, row, img in enc.iterrows():
   # exclude_cols are still returned on row for you to inspect
   if row.Survived == True:
     path = "images/Survived/"
-    
   else:
     path = "images/Died/"
   img.save(path + str(row.PassengerId) + ".jpg")
