@@ -1,5 +1,6 @@
-from PIL import Image
-from PIL import ImageDraw 
+#collapse-hide
+from PIL import Image as PImage
+from PIL import ImageDraw as PImageDraw
 import numpy as np
 from math import sqrt, ceil
 from sklearn import preprocessing
@@ -69,8 +70,8 @@ class DFToImageEncoder():
     mtx_size = ceil(sqrt(len(vals)))
     div_size = img_size // mtx_size
 
-    img = Image.new("L", (img_size, img_size))
-    drw = ImageDraw.Draw(img)
+    img = PImage.new("L", (img_size, img_size))
+    drw = PImageDraw.Draw(img)
 
     i = 0
     for y in range(0, mtx_size):
