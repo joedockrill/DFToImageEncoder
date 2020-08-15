@@ -1,4 +1,3 @@
-#collapse-hide
 from PIL import Image as PImage
 from PIL import ImageDraw as PImageDraw
 import numpy as np
