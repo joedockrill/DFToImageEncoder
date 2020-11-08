@@ -2,6 +2,8 @@
 
 Encodes tabular data from a DataFrame into images you can feed to a deep learning model.
 
+![Example encoded image](df_to_image.png)
+
 ```
 o.data         # your dataframe 
 o.fit(df)      # if you have seperate train\val\test sets 
